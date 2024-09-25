@@ -35,6 +35,6 @@ $path = (Get-Module -ListAvailable UGDSBTopdeskPS | Where-Object {$_.Path -like 
 if($path){
   $directory = (Get-Item $Path).DirectoryName
   $copyFrom = $moduleDir
-  $filesToCopy = Get-ChildItem -Path $copyFrom -Filter "*UGDSBTopdeskPS.ps*"
+  $filesToCopy = Get-ChildItem -Path $copyFrom -recurse -Filter "*TopdeskPS.ps*"
   $filesToCopy | Copy-Item -Destination $directory -Force
 }

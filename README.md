@@ -686,8 +686,8 @@ This project is designed to take all of the public topdesk API REST endpoints an
 | /tas/api/persons/free_fields/{tab}/searchlists/{searchlist} | GET    | Yes       | Get-TopdeskPersonsSearchList     |
 | /tas/api/persons/free_fields/{tab}/searchlists/{searchlist} | POST   | No        |                                  |
 | /tas/api/persons/id/{id}                                    | GET    | Yes       | Get-TopdeskPersons               |
-| /tas/api/persons/id/{id}                                    | PUT    | No        |                                  |
-| /tas/api/persons/id/{id}                                    | PATCH  | No        |                                  |
+| /tas/api/persons/id/{id}                                    | PUT    | No        | Set-TopdeskPersons               |
+| /tas/api/persons/id/{id}                                    | PATCH  | No        | Set-TopdeskPersons               |
 | /tas/api/persons/id/{id}/archive                            | PUT    | Yes       | Set-TopdeskPersonArchive         |
 | /tas/api/persons/id/{id}/archive                            | PATCH  | Yes       | Set-TopdeskPersonArchive         |
 | /tas/api/persons/id/{id}/avatar                             | GET    | Yes       | Get-TopdeskPersonsAvatar         |
